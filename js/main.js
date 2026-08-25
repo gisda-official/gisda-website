@@ -239,8 +239,7 @@ const I18N = {
 const LANG_KEY = "gisda-lang";
 
 function currentLang() {
-  const saved = localStorage.getItem(LANG_KEY);
-  return saved === "en" ? "en" : "zh";
+  return "en";
 }
 
 function applyLang(lang) {
@@ -257,16 +256,7 @@ function applyLang(lang) {
     if (I18N[lang][key] != null) el.setAttribute("alt", I18N[lang][key]);
   });
 
-  const toggle = document.getElementById("langToggle");
-  toggle.textContent = lang === "en" ? "中" : "EN";
-  toggle.setAttribute("aria-label", lang === "en" ? "切换为中文" : "Switch to English");
 }
-
-document.getElementById("langToggle").addEventListener("click", () => {
-  const next = currentLang() === "zh" ? "en" : "zh";
-  localStorage.setItem(LANG_KEY, next);
-  applyLang(next);
-});
 
 // 滚动入场动效
 const revealTargets = [
