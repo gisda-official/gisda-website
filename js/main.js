@@ -95,6 +95,8 @@ const I18N = {
     "vision.r2": "常规赛 + 季后赛系列赛",
     "vision.r3": "更多运动 —— 橄榄球、排球联赛",
     "vision.r4": "大型校际社区与资源共享",
+    "vision.y3": "未来",
+    "vision.y4": "长期",
 
     "founder.label": "发起人",
     "founder.credit": "由张延一（Andrew Zhang，HFI Y12）发起，希望通过运动与艺术连接广州的国际学校社区。",
@@ -209,6 +211,8 @@ const I18N = {
     "vision.r2": "Regular season + playoffs",
     "vision.r3": "More sports — rugby, volleyball leagues",
     "vision.r4": "A large cross-school community & resource hub",
+    "vision.y3": "Future",
+    "vision.y4": "Long-term",
 
     "founder.label": "Founder",
     "founder.credit": "Founded by Andrew Zhang (HFI Y12), connecting Guangzhou's international school community through sport and art.",
@@ -267,9 +271,8 @@ document.getElementById("langToggle").addEventListener("click", () => {
 // 滚动入场动效
 const revealTargets = [
   ".section-head", ".display", ".lead", ".stat", ".spec", ".result",
-  ".partner", ".sponsor-card", ".g", ".badge", ".why", ".mascot-card",
-  ".apparel-text", ".apparel-grid", ".rp", ".ah", ".ag", ".roadmap li",
-  ".founder-media", ".founder-info", ".school-card", ".hero-logo"
+  ".partner", ".sponsor-card", ".g", ".why", ".mascot-media", ".apparel",
+  ".rp", ".ag", ".roadmap li", ".school-cell", ".hero-figure", ".hero-found"
 ];
 
 function setupReveal() {

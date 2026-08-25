@@ -8,7 +8,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500&family=Noto+Sans+SC:wght@400;500&family=Noto+Serif+SC:wght@500;600&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="assets/images/logo.png" />
@@ -17,14 +17,11 @@
   <!-- ============ TOP BAR ============ -->
   <header class="topbar" id="topbar">
     <a class="brand" href="#top">
-      <span class="brand-chip"><img src="assets/images/logo.png" alt="GISDA logo" /></span>
-      <span class="brand-text">
-        <strong>GISDA</strong>
-        <small data-i18n="brand.sub">广州国际学校发展联盟</small>
-      </span>
+      <strong>GISDA</strong>
+      <small data-i18n="brand.sub">广州国际学校发展联盟</small>
     </a>
 
-    <nav class="nav" id="nav">
+    <nav class="nav">
       <a href="#about" data-i18n="nav.about">关于</a>
       <a href="#schools" data-i18n="nav.schools">学校</a>
       <a href="#league" data-i18n="nav.league">联赛</a>
@@ -35,336 +32,325 @@
       <a href="#vision" data-i18n="nav.vision">愿景</a>
     </nav>
 
-    <button class="lang-toggle" id="langToggle" aria-label="Toggle language">EN</button>
+    <button type="button" class="lang-toggle" id="langToggle" aria-label="Toggle language">EN</button>
   </header>
 
-  <!-- ============ HERO ============ -->
-  <section class="hero" id="top">
-    <span class="hero-watermark" aria-hidden="true">GISDA</span>
-    <span class="hero-spark" aria-hidden="true">✦</span>
-    <div class="hero-sticker" aria-hidden="true"><span>EST.</span><strong>2026</strong></div>
-    <div class="hero-grid">
-      <div class="hero-text">
-        <div class="hero-logo"><img src="assets/images/logo.png" alt="GISDA logo" /></div>
-        <p class="eyebrow"><span data-i18n="hero.eyebrow">广州 · GUANGZHOU</span> · EST. 2026</p>
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="wrap">
+        <p class="eyebrow">
+          <i class="dot" aria-hidden="true"></i>
+          <span data-i18n="hero.eyebrow">广州 · GUANGZHOU</span>
+          <span class="sep" aria-hidden="true">·</span>
+          <span>EST. 2026</span>
+        </p>
         <h1 class="hero-title">
-          <span class="line" data-i18n="hero.t1">以篮球为起点</span>
-          <span class="line outline" data-i18n="hero.t2">连接每一所国际学校</span>
+          <span data-i18n="hero.t1">以篮球为起点</span><br />
+          <span data-i18n="hero.t2">连接每一所国际学校</span>
         </h1>
         <p class="hero-sub" data-i18n="hero.sub">一个由学生发起、跨校共建的发展联盟 —— 不止是比赛，更是一个社区。</p>
-        <div class="hero-cta">
-          <a class="btn btn-accent" href="#about" data-i18n="hero.cta1">探索联盟</a>
-          <a class="btn btn-ghost" href="#game" data-i18n="hero.cta2">观看比赛</a>
+        <div class="hero-links">
+          <a class="link-strong" href="#about" data-i18n="hero.cta1">探索联盟</a>
+          <a class="link" href="#game" data-i18n="hero.cta2">观看比赛</a>
         </div>
       </div>
 
-      <div class="hero-media">
-        <figure class="hero-figure hero-figure-wide">
-          <img src="assets/images/hero-group.jpg" alt="首届 GISDA 联赛全体大合照" />
-          <figcaption data-i18n="hero.caption">首届 GISDA 联赛 · 全体大合照</figcaption>
-        </figure>
+      <figure class="hero-figure">
+        <img src="assets/images/hero-group.jpg" alt="首届 GISDA 联赛全体大合照" />
+        <figcaption data-i18n="hero.caption">首届 GISDA 联赛 · 全体大合照</figcaption>
+      </figure>
+
+      <div class="wrap hero-found">
+        <p>
+          <span class="caps" data-i18n="founder.label">发起人</span>
+          <span class="hero-found-text" data-i18n="founder.credit">由张延一（Andrew Zhang，HFI Y12）发起，希望通过运动与艺术连接广州的国际学校社区。</span>
+        </p>
       </div>
-    </div>
+    </section>
 
-    <div class="hero-founder">
-      <span class="hero-founder-label" data-i18n="founder.label">发起人</span>
-      <p class="hero-founder-text" data-i18n="founder.credit">由张延一（Andrew Zhang，HFI Y12）发起，希望通过运动与艺术连接广州的国际学校社区。</p>
-    </div>
-  </section>
+    <!-- ============ STATS ============ -->
+    <section class="stats" aria-label="key figures">
+      <div class="wrap">
+        <div class="stat"><span class="stat-num">10+</span><span class="stat-label" data-i18n="stat.1">联盟学校</span></div>
+        <div class="stat"><span class="stat-num">6</span><span class="stat-label" data-i18n="stat.2">参赛学校</span></div>
+        <div class="stat"><span class="stat-num">15</span><span class="stat-label" data-i18n="stat.3">场赛事</span></div>
+        <div class="stat"><span class="stat-num">3</span><span class="stat-label" data-i18n="stat.4">天赛程</span></div>
+      </div>
+    </section>
 
-  <!-- ============ MARQUEE 1 ============ -->
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee-track">
-      <span>BASKETBALL</span><i>✦</i><span>篮球</span><i>✦</i><span>ART</span><i>✦</i><span>艺术</span><i>✦</i><span>COMMUNITY</span><i>✦</i><span>社区</span><i>✦</i><span>GUANGZHOU</span><i>✦</i><span>广州</span><i>✦</i>
-      <span>BASKETBALL</span><i>✦</i><span>篮球</span><i>✦</i><span>ART</span><i>✦</i><span>艺术</span><i>✦</i><span>COMMUNITY</span><i>✦</i><span>社区</span><i>✦</i><span>GUANGZHOU</span><i>✦</i><span>广州</span><i>✦</i>
-    </div>
-  </div>
-
-  <!-- ============ STATS ============ -->
-  <section class="stats" aria-label="key figures">
-    <div class="stat"><span class="stat-num">10+</span><span class="stat-label" data-i18n="stat.1">联盟学校</span></div>
-    <div class="stat"><span class="stat-num">6</span><span class="stat-label" data-i18n="stat.2">参赛学校</span></div>
-    <div class="stat"><span class="stat-num">15</span><span class="stat-label" data-i18n="stat.3">场赛事</span></div>
-    <div class="stat"><span class="stat-num">3</span><span class="stat-label" data-i18n="stat.4">天赛程</span></div>
-  </section>
-
-  <!-- ============ ABOUT ============ -->
-  <section class="section" id="about">
-    <header class="section-head">
-      <span class="index">01</span>
-      <span class="section-label" data-i18n="about.label">关于联盟</span>
-    </header>
-    <div class="about-layout">
-      <h2 class="display" data-i18n="about.title">不止是篮球，<br />更是一个社区。</h2>
-      <div class="about-body">
-        <p class="lead" data-i18n="about.p1">广州国际学校发展联盟（GISDA）以篮球赛事为切入点，联合广州 10+ 所国际学校，搭建一个跨校交流与共同发展的平台。</p>
-        <p data-i18n="about.p2">我们相信，运动与艺术是连接不同文化最自然的语言。</p>
-        <div class="why">
-          <span class="why-label" data-i18n="about.why.label">创办初衷</span>
-          <p data-i18n="about.why.text">加强广州各国际学校间的联系，共建一个跨校社区，让运动与艺术成为不同文化之间的桥梁。</p>
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <header class="section-head">
+          <span class="index">01</span>
+          <span class="section-label" data-i18n="about.label">关于联盟</span>
+        </header>
+        <div class="about-layout">
+          <h2 class="display" data-i18n="about.title">不止是篮球，<br />更是一个社区。</h2>
+          <div class="about-body">
+            <p class="lead" data-i18n="about.p1">广州国际学校发展联盟（GISDA）以篮球赛事为切入点，联合广州 10+ 所国际学校，搭建一个跨校交流与共同发展的平台。</p>
+            <p class="about-p2" data-i18n="about.p2">我们相信，运动与艺术是连接不同文化最自然的语言。</p>
+            <div class="why">
+              <span class="caps" data-i18n="about.why.label">创办初衷</span>
+              <p data-i18n="about.why.text">加强广州各国际学校间的联系，共建一个跨校社区，让运动与艺术成为不同文化之间的桥梁。</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============ SCHOOLS ============ -->
-  <section class="section section-alt" id="schools">
-    <header class="section-head">
-      <span class="index">02</span>
-      <span class="section-label" data-i18n="schools.label">参赛学校</span>
-    </header>
-    <h2 class="display" data-i18n="schools.title">六所参赛学校</h2>
-    <p class="lead schools-sub" data-i18n="schools.sub">首届联赛共有六所国际学校参赛。</p>
+    <!-- ============ SCHOOLS ============ -->
+    <section class="section" id="schools">
+      <div class="wrap">
+        <header class="section-head">
+          <span class="index">02</span>
+          <span class="section-label" data-i18n="schools.label">参赛学校</span>
+        </header>
+        <h2 class="display schools-title" data-i18n="schools.title">六所参赛学校</h2>
+        <p class="schools-sub" data-i18n="schools.sub">首届联赛共有六所国际学校参赛。</p>
 
-    <div class="school-grid">
-      <div class="school-card"><img src="assets/images/school-hfi.png" alt="HFI" /><span data-i18n="schools.hfi">HFI 华附国际部</span></div>
-      <div class="school-card"><img src="assets/images/school-ssap.png" alt="SSAP" /><span data-i18n="schools.ssap">SSAP 省实国际部</span></div>
-      <div class="school-card"><img src="assets/images/school-minxin.jpeg" alt="民心港人子弟学校" /><span data-i18n="schools.minxin">民心港人子弟学校</span></div>
-      <div class="school-card"><img src="assets/images/school-huaqiao.jpeg" alt="广东华侨中学国际部" /><span data-i18n="schools.huaqiao">广东华侨中学国际部</span></div>
-      <div class="school-card"><img src="assets/images/school-aisg.jpg" alt="AISG" /><span data-i18n="schools.aisg">AISG</span></div>
-      <div class="school-card"><img src="assets/images/school-basis.png" alt="广州贝赛思" /><span data-i18n="schools.basis">广州贝赛思</span></div>
-    </div>
-  </section>
-
-  <!-- ============ MARQUEE 2 ============ -->
-  <div class="marquee marquee--accent marquee--reverse" aria-hidden="true">
-    <div class="marquee-track">
-      <span>6 SCHOOLS</span><i>✦</i><span>六所学校</span><i>✦</i><span>1 CHAMPION</span><i>✦</i><span>一个冠军</span><i>✦</i><span>EST. 2026</span><i>✦</i>
-      <span>6 SCHOOLS</span><i>✦</i><span>六所学校</span><i>✦</i><span>1 CHAMPION</span><i>✦</i><span>一个冠军</span><i>✦</i><span>EST. 2026</span><i>✦</i>
-    </div>
-  </div>
-
-  <!-- ============ LEAGUE ============ -->
-  <section class="section" id="league">
-    <header class="section-head">
-      <span class="index">03</span>
-      <span class="section-label" data-i18n="league.label">篮球联赛</span>
-    </header>
-
-    <div class="league-hero">
-      <h2 class="display" data-i18n="league.title">首届 GISDA 篮球联赛</h2>
-      <p class="kicker" data-i18n="league.kicker">6 支队伍 · 15 场比赛 · 3 天赛程</p>
-    </div>
-
-    <div class="league-grid">
-      <div class="spec">
-        <span class="spec-tag" data-i18n="league.format.label">赛制</span>
-        <figure class="doc"><img src="assets/images/format.png" alt="赛制总览" /></figure>
-      </div>
-      <div class="spec">
-        <span class="spec-tag" data-i18n="league.schedule.label">赛程</span>
-        <figure class="doc"><img src="assets/images/schedule.png" alt="赛程表" /></figure>
-      </div>
-    </div>
-
-    <div class="results">
-      <h3 class="subhead" data-i18n="league.results.label">赛事结果</h3>
-      <div class="result-grid">
-        <div class="result result-champ">
-          <span class="result-rank">🥇</span>
-          <span class="result-label" data-i18n="league.champion.label">冠军</span>
-          <strong class="result-name" data-i18n="league.champion.value">广东华侨中学国际部</strong>
-        </div>
-        <div class="result">
-          <span class="result-rank">🥈</span>
-          <span class="result-label" data-i18n="league.runnerup.label">亚军</span>
-          <strong class="result-name" data-i18n="league.runnerup.value">广州南沙民心港人子弟学校</strong>
-        </div>
-        <div class="result">
-          <span class="result-rank">🥉</span>
-          <span class="result-label" data-i18n="league.third.label">季军</span>
-          <strong class="result-name" data-i18n="league.third.value">广州贝赛思</strong>
+        <div class="school-grid">
+          <div class="school-cell"><img src="assets/images/school-hfi.png" alt="HFI" /><span data-i18n="schools.hfi">HFI 华附国际部</span></div>
+          <div class="school-cell"><img src="assets/images/school-ssap.png" alt="SSAP" /><span data-i18n="schools.ssap">SSAP 省实国际部</span></div>
+          <div class="school-cell"><img src="assets/images/school-minxin.jpeg" alt="民心港人子弟学校" /><span data-i18n="schools.minxin">民心港人子弟学校</span></div>
+          <div class="school-cell"><img src="assets/images/school-huaqiao.jpeg" alt="广东华侨中学国际部" /><span data-i18n="schools.huaqiao">广东华侨中学国际部</span></div>
+          <div class="school-cell"><img src="assets/images/school-aisg.jpg" alt="AISG" /><span data-i18n="schools.aisg">AISG</span></div>
+          <div class="school-cell"><img src="assets/images/school-basis.png" alt="广州贝赛思" /><span data-i18n="schools.basis">广州贝赛思</span></div>
         </div>
       </div>
+    </section>
 
-      <div class="result-photos">
-        <figure class="rp"><img src="assets/images/champion-1.jpg" alt="冠军队伍" /><figcaption data-i18n="awards.champion">冠军队伍</figcaption></figure>
-        <figure class="rp"><img src="assets/images/runner-up.jpg" alt="亚军队伍" /><figcaption data-i18n="awards.runnerup">亚军队伍</figcaption></figure>
-        <figure class="rp"><img src="assets/images/awards.jpg" alt="颁奖时刻" /><figcaption data-i18n="awards.award">颁奖时刻</figcaption></figure>
-      </div>
-    </div>
+    <!-- ============ LEAGUE ============ -->
+    <section class="section" id="league">
+      <div class="wrap">
+        <header class="section-head">
+          <span class="index">03</span>
+          <span class="section-label" data-i18n="league.label">篮球联赛</span>
+        </header>
 
-    <div class="partners">
-      <div class="partner">
-        <span class="partner-label" data-i18n="league.host.label">主办学校</span>
-        <span class="partner-value" data-i18n="league.host.value">HFI 华附国际部</span>
-      </div>
-      <div class="partner">
-        <span class="partner-label" data-i18n="league.partner.label">合作学校</span>
-        <span class="partner-value" data-i18n="league.partner.value">贝赛思 BASIS · SSAP 省实国际部</span>
-      </div>
-      <div class="partner">
-        <span class="partner-label" data-i18n="league.sponsor.label">赞助商</span>
-        <span class="partner-value" data-i18n="league.sponsor.value">佑成教育 · Ivystar</span>
-      </div>
-    </div>
+        <div class="league-head">
+          <h2 class="display" data-i18n="league.title">首届 GISDA 篮球联赛</h2>
+          <p class="kicker" data-i18n="league.kicker">6 支队伍 · 15 场比赛 · 3 天赛程</p>
+        </div>
 
-    <div class="sponsor-logos">
-      <div class="sponsor-card"><img src="assets/images/sponsor-youcheng.png" alt="佑成教育" /><span data-i18n="sponsor.yc">佑成教育</span></div>
-      <div class="sponsor-card"><img src="assets/images/sponsor-ivystar.png" alt="Ivystar" /><span data-i18n="sponsor.ivystar">Ivystar</span></div>
-    </div>
-  </section>
+        <div class="spec-grid">
+          <div class="spec">
+            <span class="spec-tag" data-i18n="league.format.label">赛制</span>
+            <figure class="doc"><img src="assets/images/format.png" alt="赛制总览" /></figure>
+          </div>
+          <div class="spec">
+            <span class="spec-tag" data-i18n="league.schedule.label">赛程</span>
+            <figure class="doc"><img src="assets/images/schedule.png" alt="赛程表" /></figure>
+          </div>
+        </div>
 
-  <!-- ============ GAME GALLERY ============ -->
-  <section class="section section-alt" id="game">
-    <header class="section-head">
-      <span class="index">04</span>
-      <span class="section-label" data-i18n="game.label">比赛现场</span>
-    </header>
-    <h2 class="display" data-i18n="game.title">赛场瞬间</h2>
+        <div class="results">
+          <h3 class="subhead-caps" data-i18n="league.results.label">赛事结果</h3>
+          <ol class="results-list">
+            <li class="result result-champ">
+              <span class="result-index">01</span>
+              <span class="result-label" data-i18n="league.champion.label">冠军</span>
+              <strong class="result-name" data-i18n="league.champion.value">广东华侨中学国际部</strong>
+            </li>
+            <li class="result">
+              <span class="result-index">02</span>
+              <span class="result-label" data-i18n="league.runnerup.label">亚军</span>
+              <strong class="result-name" data-i18n="league.runnerup.value">广州南沙民心港人子弟学校</strong>
+            </li>
+            <li class="result">
+              <span class="result-index">03</span>
+              <span class="result-label" data-i18n="league.third.label">季军</span>
+              <strong class="result-name" data-i18n="league.third.value">广州贝赛思</strong>
+            </li>
+          </ol>
 
-    <div class="gallery">
-      <figure class="g g-wide"><img src="assets/images/action-1.jpg" alt="比赛现场" /></figure>
-      <figure class="g"><img src="assets/images/action-2.jpg" alt="比赛现场" /></figure>
-      <figure class="g"><img src="assets/images/game-1.jpg" alt="比赛现场" /></figure>
-      <figure class="g"><img src="assets/images/action-3.jpeg" alt="比赛现场" /></figure>
-      <figure class="g g-wide"><img src="assets/images/game-2.jpg" alt="比赛现场" /></figure>
-      <figure class="g"><img src="assets/images/action-4.jpeg" alt="比赛现场" /></figure>
-      <figure class="g"><img src="assets/images/action-5.jpeg" alt="比赛现场" /></figure>
-      <figure class="g"><img src="assets/images/game-4.jpg" alt="比赛现场" /></figure>
-      <figure class="g g-wide"><img src="assets/images/game-5.jpg" alt="比赛现场" /></figure>
-      <figure class="g"><img src="assets/images/game-6.jpg" alt="比赛现场" /></figure>
-      <figure class="g"><img src="assets/images/game-7.jpg" alt="比赛现场" /></figure>
-      <figure class="g"><img src="assets/images/game-8.jpg" alt="比赛现场" /></figure>
-    </div>
-  </section>
+          <div class="result-photos">
+            <figure class="rp"><img src="assets/images/champion-1.jpg" alt="冠军队伍" /><figcaption data-i18n="awards.champion">冠军队伍</figcaption></figure>
+            <figure class="rp"><img src="assets/images/runner-up.jpg" alt="亚军队伍" /><figcaption data-i18n="awards.runnerup">亚军队伍</figcaption></figure>
+            <figure class="rp"><img src="assets/images/awards.jpg" alt="颁奖时刻" /><figcaption data-i18n="awards.award">颁奖时刻</figcaption></figure>
+          </div>
+        </div>
 
-  <!-- ============ AWARDS & GROUP ============ -->
-  <section class="section" id="awards">
-    <span class="awards-watermark" aria-hidden="true">CHAMPIONS</span>
-    <span class="awards-spark" aria-hidden="true">✦</span>
-    <div class="awards-sticker" aria-hidden="true"><span>首届</span><strong>CHAMPION</strong></div>
-    <header class="section-head">
-      <span class="index">05</span>
-      <span class="section-label" data-i18n="awards.label">颁奖 &amp; 合照</span>
-    </header>
-    <h2 class="display" data-i18n="awards.title">荣耀时刻</h2>
+        <dl class="partners">
+          <div class="partner">
+            <dt data-i18n="league.host.label">主办学校</dt>
+            <dd data-i18n="league.host.value">HFI 华附国际部</dd>
+          </div>
+          <div class="partner">
+            <dt data-i18n="league.partner.label">合作学校</dt>
+            <dd data-i18n="league.partner.value">贝赛思 BASIS · SSAP 省实国际部</dd>
+          </div>
+          <div class="partner">
+            <dt data-i18n="league.sponsor.label">赞助商</dt>
+            <dd data-i18n="league.sponsor.value">佑成教育 · Ivystar</dd>
+          </div>
+        </dl>
 
-    <div class="awards-hero">
-      <figure class="ah"><img src="assets/images/champion-1.jpg" alt="冠军队伍" /><figcaption data-i18n="awards.champion">冠军队伍</figcaption></figure>
-      <figure class="ah"><img src="assets/images/champion-2.jpg" alt="冠军队伍" /><figcaption data-i18n="awards.champion">冠军队伍</figcaption></figure>
-    </div>
-
-    <div class="awards-grid">
-      <figure class="ag"><img src="assets/images/group.jpg" alt="全体大合照" /><figcaption data-i18n="awards.group">全体大合照</figcaption></figure>
-      <figure class="ag"><img src="assets/images/staff-sponsor.jpg" alt="工作人员与赞助商" /><figcaption data-i18n="awards.staff">工作人员与赞助商</figcaption></figure>
-    </div>
-  </section>
-
-  <!-- ============ MARQUEE 3 ============ -->
-  <div class="marquee marquee--purple" aria-hidden="true">
-    <div class="marquee-track">
-      <span>ART</span><i>✦</i><span>艺术</span><i>✦</i><span>MASCOT</span><i>✦</i><span>榕宝</span><i>✦</i><span>COMMUNITY</span><i>✦</i><span>社区</span><i>✦</i>
-      <span>ART</span><i>✦</i><span>艺术</span><i>✦</i><span>MASCOT</span><i>✦</i><span>榕宝</span><i>✦</i><span>COMMUNITY</span><i>✦</i><span>社区</span><i>✦</i>
-    </div>
-  </div>
-
-  <!-- ============ ART ============ -->
-  <section class="section section-accent" id="art">
-    <header class="section-head">
-      <span class="index">06</span>
-      <span class="section-label" data-i18n="art.label">艺术展</span>
-    </header>
-    <div class="art-layout">
-      <div>
-        <span class="badge" data-i18n="art.badge">筹备中 · COMING SOON</span>
-        <h2 class="display" data-i18n="art.title">榕 · 艺 —— 跨校学生艺术展</h2>
-      </div>
-      <p class="lead" data-i18n="art.p">让各校学生分享自己的作品 —— 绘画、摄影、设计、数字艺术。在篮球之外，用艺术继续连接彼此。</p>
-    </div>
-  </section>
-
-  <!-- ============ MERCH & MASCOT ============ -->
-  <section class="section" id="merch">
-    <header class="section-head">
-      <span class="index">07</span>
-      <span class="section-label" data-i18n="merch.label">周边 &amp; 吉祥物</span>
-    </header>
-
-    <div class="mascot-layout">
-      <div class="mascot-info">
-        <span class="badge badge--dark" data-i18n="merch.badge">筹备中 · COMING SOON</span>
-        <h2 class="display" data-i18n="merch.title">小榕树「榕宝」</h2>
-        <p class="mascot-tagline" data-i18n="merch.tagline">像一个「会陪伴你的校园朋友」。</p>
-
-        <ul class="features">
-          <li data-i18n="merch.f1">圆圆的小身体</li>
-          <li data-i18n="merch.f2">两片大大的榕树叶作为耳朵</li>
-          <li data-i18n="merch.f3">小短手、小脚</li>
-          <li data-i18n="merch.f4">没有复杂五官，只有两个黑色小眼睛 + 微笑</li>
-        </ul>
-
-        <div class="why">
-          <span class="why-label" data-i18n="merch.meaning.label">寓意</span>
-          <p data-i18n="merch.meaning">一棵小榕树，在广州成长，也见证不同国家的学生一起成长。</p>
+        <div class="sponsor-logos">
+          <div class="sponsor-card"><img src="assets/images/sponsor-youcheng.png" alt="佑成教育" /><span data-i18n="sponsor.yc">佑成教育</span></div>
+          <div class="sponsor-card"><img src="assets/images/sponsor-ivystar.png" alt="Ivystar" /><span data-i18n="sponsor.ivystar">Ivystar</span></div>
         </div>
       </div>
+    </section>
 
-      <div class="mascot-media">
-        <div class="mascot-card"><img src="assets/images/mascot-1.png" alt="吉祥物「榕宝」设计图" /></div>
-        <div class="mascot-card"><img src="assets/images/mascot-2.png" alt="吉祥物「榕宝」设计图" /></div>
-        <div class="mascot-card"><img src="assets/images/mascot-3.png" alt="吉祥物「榕宝」设计图" /></div>
+    <!-- ============ GAME GALLERY ============ -->
+    <section class="section" id="game">
+      <div class="wrap">
+        <header class="section-head">
+          <span class="index">04</span>
+          <span class="section-label" data-i18n="game.label">比赛现场</span>
+        </header>
+        <h2 class="display games-title" data-i18n="game.title">赛场瞬间</h2>
+
+        <div class="gallery">
+          <figure class="g"><img src="assets/images/action-1.jpg" alt="比赛现场" /></figure>
+          <figure class="g"><img src="assets/images/action-2.jpg" alt="比赛现场" /></figure>
+          <figure class="g"><img src="assets/images/game-1.jpg" alt="比赛现场" /></figure>
+          <figure class="g"><img src="assets/images/action-3.jpeg" alt="比赛现场" /></figure>
+          <figure class="g"><img src="assets/images/game-2.jpg" alt="比赛现场" /></figure>
+          <figure class="g"><img src="assets/images/action-4.jpeg" alt="比赛现场" /></figure>
+          <figure class="g"><img src="assets/images/action-5.jpeg" alt="比赛现场" /></figure>
+          <figure class="g"><img src="assets/images/game-4.jpg" alt="比赛现场" /></figure>
+          <figure class="g"><img src="assets/images/game-5.jpg" alt="比赛现场" /></figure>
+          <figure class="g"><img src="assets/images/game-6.jpg" alt="比赛现场" /></figure>
+          <figure class="g"><img src="assets/images/game-7.jpg" alt="比赛现场" /></figure>
+          <figure class="g"><img src="assets/images/game-8.jpg" alt="比赛现场" /></figure>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="apparel">
-      <span class="apparel-watermark" aria-hidden="true">MERCH</span>
-      <span class="apparel-spark" aria-hidden="true">✦</span>
-      <div class="apparel-sticker" aria-hidden="true"><span>NEW</span><strong>新品</strong></div>
-      <div class="apparel-text">
-        <h3 class="subhead" data-i18n="merch.apparel.title">联赛主题服装</h3>
-        <p data-i18n="merch.apparel.desc">卫衣 · T 恤 · 背心，多尺码预售中。</p>
-        <a class="btn btn-accent" href="#" data-i18n="merch.buy">前往微信商店购买</a>
+    <!-- ============ AWARDS ============ -->
+    <section class="section" id="awards">
+      <div class="wrap">
+        <header class="section-head">
+          <span class="index">05</span>
+          <span class="section-label" data-i18n="awards.label">颁奖 &amp; 合照</span>
+        </header>
+        <h2 class="display awards-title" data-i18n="awards.title">荣耀时刻</h2>
+
+        <div class="awards-grid">
+          <figure class="ag"><img src="assets/images/champion-1.jpg" alt="冠军队伍" /><figcaption data-i18n="awards.champion">冠军队伍</figcaption></figure>
+          <figure class="ag"><img src="assets/images/champion-2.jpg" alt="冠军队伍" /><figcaption data-i18n="awards.champion">冠军队伍</figcaption></figure>
+          <figure class="ag"><img src="assets/images/group.jpg" alt="全体大合照" /><figcaption data-i18n="awards.group">全体大合照</figcaption></figure>
+          <figure class="ag"><img src="assets/images/staff-sponsor.jpg" alt="工作人员与赞助商" /><figcaption data-i18n="awards.staff">工作人员与赞助商</figcaption></figure>
+        </div>
       </div>
-      <div class="apparel-grid">
-        <figure><img src="assets/images/apparel-1.jpg" alt="周边服装" /></figure>
-        <figure><img src="assets/images/apparel-2.jpg" alt="周边服装" /></figure>
-        <figure><img src="assets/images/apparel-3.jpg" alt="周边服装" /></figure>
-        <figure><img src="assets/images/apparel-4.jpg" alt="周边服装" /></figure>
+    </section>
+
+    <!-- ============ ART ============ -->
+    <section class="section" id="art">
+      <div class="wrap">
+        <header class="section-head">
+          <span class="index">06</span>
+          <span class="section-label" data-i18n="art.label">艺术展</span>
+        </header>
+        <div class="art-layout">
+          <div>
+            <p class="coming-soon"><i class="dot" aria-hidden="true"></i><span data-i18n="art.badge">筹备中 · COMING SOON</span></p>
+            <h2 class="display" data-i18n="art.title">榕 · 艺 —— 跨校学生艺术展</h2>
+          </div>
+          <p class="lead" data-i18n="art.p">让各校学生分享自己的作品 —— 绘画、摄影、设计、数字艺术。在篮球之外，用艺术继续连接彼此。</p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============ VISION ============ -->
-  <section class="section section-dark" id="vision">
-    <header class="section-head">
-      <span class="index">08</span>
-      <span class="section-label" data-i18n="vision.label">发展愿景</span>
-    </header>
-    <div class="vision-layout">
-      <h2 class="display" data-i18n="vision.title">从一场赛事，<br />到一整个赛季。</h2>
-      <p class="lead" data-i18n="vision.p">从明年起，联赛将从暑期单届赛事，升级为「常规赛 + 季后赛」的系列赛架构：在周末进行、拉长战线、吸纳更多队伍，经过数十场比赛后争夺总冠军。</p>
-    </div>
+    <!-- ============ MERCH & MASCOT ============ -->
+    <section class="section" id="merch">
+      <div class="wrap">
+        <header class="section-head">
+          <span class="index">07</span>
+          <span class="section-label" data-i18n="merch.label">周边 &amp; 吉祥物</span>
+        </header>
 
-    <ol class="roadmap">
-      <li>
-        <span class="road-year">2026</span>
-        <span class="road-text" data-i18n="vision.r1">首届联赛落地（6 队 · 15 场）</span>
-      </li>
-      <li>
-        <span class="road-year">2027</span>
-        <span class="road-text" data-i18n="vision.r2">常规赛 + 季后赛系列赛</span>
-      </li>
-      <li>
-        <span class="road-year">未来</span>
-        <span class="road-text" data-i18n="vision.r3">更多运动 —— 橄榄球、排球联赛</span>
-      </li>
-      <li>
-        <span class="road-year">长期</span>
-        <span class="road-text" data-i18n="vision.r4">大型校际社区与资源共享</span>
-      </li>
-    </ol>
-  </section>
+        <div class="mascot-layout">
+          <div class="mascot-info">
+            <p class="coming-soon"><i class="dot" aria-hidden="true"></i><span data-i18n="merch.badge">筹备中 · COMING SOON</span></p>
+            <h2 class="display" data-i18n="merch.title">小榕树「榕宝」</h2>
+            <p class="mascot-tagline" data-i18n="merch.tagline">像一个「会陪伴你的校园朋友」。</p>
+
+            <ul class="features">
+              <li data-i18n="merch.f1">圆圆的小身体</li>
+              <li data-i18n="merch.f2">两片大大的榕树叶作为耳朵</li>
+              <li data-i18n="merch.f3">小短手、小脚</li>
+              <li data-i18n="merch.f4">没有复杂五官，只有两个黑色小眼睛 + 微笑</li>
+            </ul>
+
+            <div class="why">
+              <span class="caps" data-i18n="merch.meaning.label">寓意</span>
+              <p data-i18n="merch.meaning">一棵小榕树，在广州成长，也见证不同国家的学生一起成长。</p>
+            </div>
+          </div>
+
+          <div class="mascot-media">
+            <figure><img src="assets/images/mascot-1.png" alt="吉祥物「榕宝」设计图" /></figure>
+            <figure><img src="assets/images/mascot-2.png" alt="吉祥物「榕宝」设计图" /></figure>
+            <figure><img src="assets/images/mascot-3.png" alt="吉祥物「榕宝」设计图" /></figure>
+          </div>
+        </div>
+
+        <div class="apparel">
+          <div class="apparel-head">
+            <div>
+              <h3 class="subhead" data-i18n="merch.apparel.title">联赛主题服装</h3>
+              <p class="apparel-desc" data-i18n="merch.apparel.desc">卫衣 · T 恤 · 背心，多尺码预售中。</p>
+            </div>
+            <a class="link-strong" href="#" data-i18n="merch.buy">前往微信商店购买</a>
+          </div>
+          <div class="apparel-grid">
+            <figure><img src="assets/images/apparel-1.jpg" alt="周边服装" /></figure>
+            <figure><img src="assets/images/apparel-2.jpg" alt="周边服装" /></figure>
+            <figure><img src="assets/images/apparel-3.jpg" alt="周边服装" /></figure>
+            <figure><img src="assets/images/apparel-4.jpg" alt="周边服装" /></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VISION ============ -->
+    <section class="section section-dark" id="vision">
+      <div class="wrap">
+        <header class="section-head">
+          <span class="index">08</span>
+          <span class="section-label" data-i18n="vision.label">发展愿景</span>
+        </header>
+        <div class="vision-layout">
+          <h2 class="display" data-i18n="vision.title">从一场赛事，<br />到一整个赛季。</h2>
+          <p class="lead" data-i18n="vision.p">从明年起，联赛将从暑期单届赛事，升级为「常规赛 + 季后赛」的系列赛架构：在周末进行、拉长战线、吸纳更多队伍，经过数十场比赛后争夺总冠军。</p>
+        </div>
+
+        <ol class="roadmap">
+          <li>
+            <span class="road-year">2026</span>
+            <span class="road-text" data-i18n="vision.r1">首届联赛落地（6 队 · 15 场）</span>
+          </li>
+          <li>
+            <span class="road-year">2027</span>
+            <span class="road-text" data-i18n="vision.r2">常规赛 + 季后赛系列赛</span>
+          </li>
+          <li>
+            <span class="road-year" data-i18n="vision.y3">未来</span>
+            <span class="road-text" data-i18n="vision.r3">更多运动 —— 橄榄球、排球联赛</span>
+          </li>
+          <li>
+            <span class="road-year" data-i18n="vision.y4">长期</span>
+            <span class="road-text" data-i18n="vision.r4">大型校际社区与资源共享</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
 
   <!-- ============ FOOTER ============ -->
   <footer class="footer">
-    <div class="footer-brand">
-      <img src="assets/images/logo.png" alt="GISDA logo" class="footer-logo" />
-      <span class="footer-name">GISDA</span>
-      <span class="footer-sub" data-i18n="brand.sub">广州国际学校发展联盟</span>
+    <div class="wrap">
+      <div class="footer-brand">
+        <span class="footer-name">GISDA</span>
+        <span class="footer-sub" data-i18n="brand.sub">广州国际学校发展联盟</span>
+      </div>
+      <p class="footer-tag" data-i18n="footer.tag">以篮球为起点，连接广州每一所国际学校。</p>
+      <p class="footer-rights" data-i18n="footer.rights">© 2026 广州国际学校发展联盟 GISDA · 保留所有权利</p>
     </div>
-    <p class="footer-tag" data-i18n="footer.tag">以篮球为起点，连接广州每一所国际学校。</p>
-    <p class="footer-rights" data-i18n="footer.rights">© 2026 广州国际学校发展联盟 GISDA · 保留所有权利</p>
   </footer>
 
   <script src="js/main.js"></script>
