@@ -39,7 +39,7 @@ const I18N = {
 
     "league.label": "篮球联赛",
     "league.title": "首届 GISDA 篮球联赛",
-    "league.kicker": "6 支队伍 · 15 场比赛 · 3 天赛程",
+    "league.kicker": "6 支队伍 · 16 场比赛 · 3 天赛程",
     "league.format.label": "赛制",
     "league.schedule.label": "赛程",
     "league.results.label": "赛事结果",
@@ -155,7 +155,7 @@ const I18N = {
 
     "league.label": "Basketball League",
     "league.title": "The Inaugural GISDA League",
-    "league.kicker": "6 Teams · 15 Games · 3 Days",
+    "league.kicker": "6 Teams · 16 Games · 3 Days",
     "league.format.label": "Format",
     "league.schedule.label": "Schedule",
     "league.results.label": "Results",
