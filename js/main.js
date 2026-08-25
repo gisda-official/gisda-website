@@ -74,16 +74,7 @@ const I18N = {
     "art.title": "榕 · 艺 —— 跨校学生艺术展",
     "art.p": "让各校学生分享自己的作品 —— 绘画、摄影、设计、数字艺术。在篮球之外，用艺术继续连接彼此。",
 
-    "merch.label": "周边 & 吉祥物",
-    "merch.badge": "筹备中 · COMING SOON",
-    "merch.title": "小榕树「榕宝」",
-    "merch.tagline": "像一个「会陪伴你的校园朋友」。",
-    "merch.f1": "圆圆的小身体",
-    "merch.f2": "两片大大的榕树叶作为耳朵",
-    "merch.f3": "小短手、小脚",
-    "merch.f4": "没有复杂五官，只有两个黑色小眼睛 + 微笑",
-    "merch.meaning.label": "寓意",
-    "merch.meaning": "一棵小榕树，在广州成长，也见证不同国家的学生一起成长。",
+    "merch.label": "周边",
     "merch.apparel.title": "联赛主题服装",
     "merch.apparel.desc": "卫衣 · T 恤 · 背心，多尺码预售中。",
     "merch.buy": "前往微信商店购买",
@@ -190,16 +181,7 @@ const I18N = {
     "art.title": "Banyan Arts — A Cross-School Student Exhibition",
     "art.p": "A space for students across schools to share their work — painting, photography, design, digital art. Beyond basketball, art keeps us connected.",
 
-    "merch.label": "Merch & Mascot",
-    "merch.badge": "Coming Soon",
-    "merch.title": "“Banyan Buddy” the Banyan Sprout",
-    "merch.tagline": "A campus friend who stays with you.",
-    "merch.f1": "A round little body",
-    "merch.f2": "Two big banyan leaves as ears",
-    "merch.f3": "Little arms and feet",
-    "merch.f4": "No complex features — just two black eyes and a smile",
-    "merch.meaning.label": "The Meaning",
-    "merch.meaning": "A little banyan tree, growing in Guangzhou, witnessing students from different countries growing up together.",
+    "merch.label": "Merch",
     "merch.apparel.title": "League Apparel",
     "merch.apparel.desc": "Hoodies, tees and vests — available for pre-order in multiple sizes.",
     "merch.buy": "Buy on WeChat Store",
@@ -261,7 +243,7 @@ function applyLang(lang) {
 // 滚动入场动效
 const revealTargets = [
   ".section-head", ".display", ".lead", ".stat", ".rule-block", ".result",
-  ".partner", ".sponsor-card", ".g", ".why", ".mascot-media", ".apparel",
+  ".partner", ".sponsor-card", ".g", ".why", ".apparel",
   ".rp", ".ag", ".roadmap li", ".school-cell", ".hero-figure", ".hero-found",
   ".rules-posters"
 ];

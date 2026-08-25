@@ -816,59 +816,8 @@ button:focus-visible {
 }
 
 /* ============================================================
-   07 周边 & 吉祥物
+   07 周边
    ============================================================ */
-
-.mascot-layout {
-  display: grid;
-  grid-template-columns: 1fr 1.1fr;
-  gap: var(--gutter);
-  align-items: start;
-  margin-bottom: clamp(64px, 9vw, 110px);
-}
-
-.mascot-tagline {
-  margin-top: 16px;
-  color: var(--ink-soft);
-}
-
-.features {
-  margin: 28px 0 36px;
-}
-
-.features li {
-  position: relative;
-  padding: 12px 0 12px 22px;
-  border-bottom: 1px solid var(--hairline);
-  font-size: .95rem;
-  color: var(--ink-soft);
-}
-
-.features li:first-child {
-  border-top: 1px solid var(--hairline);
-}
-
-.features li::before {
-  content: "";
-  position: absolute;
-  left: 2px;
-  top: 50%;
-  width: 6px;
-  height: 6px;
-  border: 1px solid var(--accent);
-  border-radius: 50%;
-  transform: translateY(-50%);
-}
-
-.mascot-media figure {
-  border: 1px solid var(--hairline);
-  background: #fff;
-}
-
-.mascot-media img {
-  width: 100%;
-  height: auto;
-}
 
 /* 服装 */
 .apparel-head {
@@ -1025,7 +974,6 @@ button:focus-visible {
   .about-layout,
   .art-layout,
   .vision-layout,
-  .mascot-layout,
   .rules-layout {
     grid-template-columns: 1fr;
   }
