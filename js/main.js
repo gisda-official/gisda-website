@@ -270,9 +270,10 @@ document.getElementById("langToggle").addEventListener("click", () => {
 
 // 滚动入场动效
 const revealTargets = [
-  ".section-head", ".display", ".lead", ".stat", ".spec", ".result",
+  ".section-head", ".display", ".lead", ".stat", ".rule-block", ".result",
   ".partner", ".sponsor-card", ".g", ".why", ".mascot-media", ".apparel",
-  ".rp", ".ag", ".roadmap li", ".school-cell", ".hero-figure", ".hero-found"
+  ".rp", ".ag", ".roadmap li", ".school-cell", ".hero-figure", ".hero-found",
+  ".rules-posters"
 ];
 
 function setupReveal() {

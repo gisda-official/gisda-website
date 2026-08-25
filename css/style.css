@@ -481,20 +481,108 @@ button:focus-visible {
   color: var(--ink-soft);
 }
 
-.spec-grid {
+/* 规则 + 海报 */
+.rules-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.15fr .85fr;
   gap: var(--gutter);
+  align-items: start;
   margin-bottom: clamp(56px, 8vw, 96px);
 }
 
-.spec-tag {
-  display: block;
-  margin-bottom: 14px;
-  font-size: .72rem;
-  letter-spacing: .18em;
+.rules-kicker {
+  margin-bottom: 20px;
+  font-size: .78rem;
+  letter-spacing: .2em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--ink-soft);
+}
+
+.rule-block {
+  padding: 26px 0;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.rule-block:first-child {
+  padding-top: 0;
+}
+
+.rule-block:last-child {
+  border-bottom: 0;
+}
+
+.rule-block h4 {
+  margin-bottom: 14px;
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.rule-block h4 em {
+  margin-right: 8px;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--accent);
+}
+
+.rule-intro {
+  margin-bottom: 12px;
+  font-size: .95rem;
+  color: var(--ink-soft);
+}
+
+.rule-list li {
+  position: relative;
+  padding: 6px 0 6px 16px;
+  font-size: .93rem;
+  line-height: 1.75;
+  color: var(--ink-soft);
+}
+
+.rule-list > li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 1.05em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: .85;
+}
+
+.rule-list ul {
+  margin-top: 6px;
+}
+
+.rule-list li li {
+  padding: 4px 0 4px 18px;
+  font-size: .9rem;
+}
+
+.rule-list li li::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 1.1em;
+  width: 4px;
+  height: 4px;
+  border: 1px solid var(--muted);
+  border-radius: 50%;
+  background: none;
+}
+
+.rule-list strong {
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.rules-posters {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(20px, 3vw, 32px);
+  position: sticky;
+  top: 96px;
 }
 
 .doc {
@@ -505,6 +593,15 @@ button:focus-visible {
 .doc img {
   width: 100%;
   height: auto;
+}
+
+.doc figcaption {
+  padding: 10px 14px;
+  border-top: 1px solid var(--hairline);
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: .85rem;
+  color: var(--muted);
 }
 
 /* 结果列表 */
@@ -650,15 +747,18 @@ button:focus-visible {
 }
 
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: clamp(10px, 1.4vw, 16px);
+  columns: 3;
+  column-gap: clamp(10px, 1.4vw, 16px);
+}
+
+.g {
+  break-inside: avoid;
+  margin-bottom: clamp(10px, 1.4vw, 16px);
 }
 
 .g img {
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  height: auto;
 }
 
 /* ============================================================
@@ -804,12 +904,12 @@ button:focus-visible {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: clamp(10px, 1.4vw, 16px);
+  align-items: start;
 }
 
 .apparel-grid img {
   width: 100%;
-  aspect-ratio: 3 / 4;
-  object-fit: cover;
+  height: auto;
 }
 
 /* ============================================================
@@ -932,8 +1032,14 @@ button:focus-visible {
   .about-layout,
   .art-layout,
   .vision-layout,
-  .mascot-layout {
+  .mascot-layout,
+  .rules-layout {
     grid-template-columns: 1fr;
+  }
+
+  .rules-posters {
+    position: static;
+    flex-direction: row;
   }
 }
 
@@ -964,13 +1070,12 @@ button:focus-visible {
   }
 
   .school-grid,
-  .gallery,
   .awards-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .spec-grid {
-    grid-template-columns: 1fr;
+  .gallery {
+    columns: 2;
   }
 
   .result-photos {
@@ -983,6 +1088,10 @@ button:focus-visible {
 }
 
 @media (max-width: 560px) {
+  .rules-posters {
+    flex-direction: column;
+  }
+
   .result {
     flex-wrap: wrap;
   }
