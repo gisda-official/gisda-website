@@ -771,14 +771,14 @@ button:focus-visible {
 
 .awards-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: clamp(10px, 1.4vw, 16px);
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(20px, 3vw, 40px) clamp(10px, 1.4vw, 16px);
+  align-items: start;
 }
 
 .ag img {
   width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
+  height: auto;
 }
 
 .ag figcaption {
@@ -860,12 +860,6 @@ button:focus-visible {
   transform: translateY(-50%);
 }
 
-.mascot-media {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: clamp(10px, 1.4vw, 16px);
-}
-
 .mascot-media figure {
   border: 1px solid var(--hairline);
   background: #fff;
@@ -873,8 +867,7 @@ button:focus-visible {
 
 .mascot-media img {
   width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
+  height: auto;
 }
 
 /* 服装 */
